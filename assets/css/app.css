@@ -50,3 +50,33 @@ img {
     }
 }
 /* Reset: End */
+
+/* Navbar: Start */
+.navbar-accent {
+    --cbc-navbar-color: #404040;
+    --cbc-navbar-hover-color: #ffffff;
+    --cbc-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --cbc-navbar-active-color: #ffffff;
+    --cbc-navbar-brand-color: #ffffff;
+    --cbc-navbar-brand-hover-color: #ffffff;
+    --cbc-navbar-toggler-border-color: #d07c2c;
+}
+
+.bg-accent {
+    background-color: #e1d37b !important;
+    opacity: 1;
+}
+
+.navbar-toggler {
+    color: var(--cbc-navbar-toggler-border-color);
+    border: 1px solid var(--cbc-navbar-toggler-border-color);
+}
+
+.nav-link {
+    color: var(--cbc-navbar-color);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--cbc-navbar-active-color);
+}
+/* Navbar: End */

@@ -4,7 +4,7 @@ $path = parse_url($currentUrl, PHP_URL_PATH); // Gets the Path or all the text a
 $paths = explode('/', $path); // Splits the $path "/"
 $currentPath = $paths[1]; // Gets the first path after the first "/"
 ?>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-accent bg-accent">
     <div class="container">
         <a class="navbar-brand" href="/"><img src="/logo.png" alt="logo.png" height="30" width="auto"></a>
 
