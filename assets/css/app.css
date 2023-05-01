@@ -53,12 +53,12 @@ img {
 
 /* Navbar: Start */
 .navbar-accent {
-    --cbc-navbar-color: #404040;
-    --cbc-navbar-hover-color: #ffffff;
+    --cbc-navbar-color: #707070;
+    --cbc-navbar-hover-color: #000000;
     --cbc-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-    --cbc-navbar-active-color: #ffffff;
-    --cbc-navbar-brand-color: #ffffff;
-    --cbc-navbar-brand-hover-color: #ffffff;
+    --cbc-navbar-active-color: #000000;
+    --cbc-navbar-brand-color: #000000;
+    --cbc-navbar-brand-hover-color: #000000;
     --cbc-navbar-toggler-border-color: #d07c2c;
 }
 
@@ -73,6 +73,7 @@ img {
 }
 
 .nav-link {
+    font-weight: 600;
     color: var(--cbc-navbar-color);
 }
 
