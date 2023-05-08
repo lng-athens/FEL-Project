@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php include_once "./components/AppNavbar.php"; ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT']."/components/AppNavbar.php"); ?>
 
     <div class="container" id="profilePage">
         <h3 class="title mt-4 mt-md-5">Profile</h3>

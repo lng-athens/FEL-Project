@@ -15,10 +15,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Page styles -->
     <link href="/assets/css/app.css" rel="stylesheet" />
+    <link href="/assets/css/index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <?php include_once "./components/AppNavbar.php"; ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT']."/components/AppNavbar.php"); ?>
+
+    <?php include($_SERVER['DOCUMENT_ROOT']."/components/categories.php"); ?>
 
     <!-- JQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>

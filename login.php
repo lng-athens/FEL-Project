@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <?php include_once "./components/AppNavbar.php"; ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT']."/components/AppNavbar.php"); ?>
 
     <div class="container" id="loginPage">
         <div class="row mt-5">
