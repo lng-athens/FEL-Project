@@ -1,0 +1,39 @@
+.card {
+    border: 0;
+}
+
+.img-fluid {
+    aspect-ratio: 1 /1;
+    height: 100%;
+    width: 75%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+.card .card-text {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .card .card-text.description {
+        --line-limit: 3;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: var(--line-limit);
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: calc(var(--line-limit) * 1.2rem);
+    }
+
+    .card-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
