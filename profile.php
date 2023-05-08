@@ -15,6 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Page styles -->
     <link href="/assets/css/app.css" rel="stylesheet" />
+    <link href="/assets/css/formStyles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,16 +23,56 @@
 
     <div class="container" id="profilePage">
         <h3 class="title mt-4 mt-md-5">Profile</h3>
-        <div class="row mt-3">
-            <div class="col-12 col-md-6">
-                <div class="mb-3">
-                    <label class="form-label">Name</label>
-                    <div class="input-group">
-                        
+        
+        <form class="mt-2 mt-lg-3">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="firstName" name="firstName" value="" placeholder="First Name" required />
+                        <label for="firstName" class="form-label">First Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lastName" name="lastName" value="" placeholder="Last Name" required />
+                        <label for="lastName" class="form-label">Last Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" value="" placeholder="Your email" required />
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="mobileNumber" name="mobileNumber" value="" placeholder="Contact number" required />
+                        <label for="mobileNumber" class="form-label">Mobile Contact Number</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating mb-3">
+                        <textarea type="text" class="form-control" id="address" name="address" value="" placeholder="Delivery address" required></textarea>
+                        <label for="address" class="form-label">Delivery Address</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password1" name="password1" value="" placeholder="Enter password" required />
+                        <label for="password1" class="form-label">Password</label>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password2" name="password2" value="" placeholder="Retype password" required />
+                        <label for="password2" class="form-label">Confirm Password</label>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="hstack justify-content-center justify-content-md-end">
+                <button type="submit" class="btn btn-primary" name="btn-update" id="btn-update">Save Changes</button>
+            </div>
+        </form>
     </div>
 
     <!-- JQuery CDN -->
@@ -42,5 +83,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init()</script>
     <!-- Page Scripts -->
+    <script src="/assets/js/formAnimation.js" type="text/javascript"></script>
 </body>
 </html>

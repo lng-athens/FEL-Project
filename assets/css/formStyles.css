@@ -1,0 +1,22 @@
+.form-floating label {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.form-floating .form-control::placeholder {
+    opacity: 1;
+    color: #495057;
+}
+
+.form-floating textarea {
+    resize: none;
+    min-height: calc(1.25rem * 10);
+    max-height: calc(1.25rem * 10);
+}
