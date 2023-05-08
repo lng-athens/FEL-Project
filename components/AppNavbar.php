@@ -1,8 +1,10 @@
 <?php
+session_start();
 $currentUrl = "$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; //Gets the URL
 $path = parse_url($currentUrl, PHP_URL_PATH); // Gets the Path or all the text after the first "/" of the URL
 $paths = explode('/', $path); // Splits the $path "/"
 $currentPath = $paths[1]; // Gets the first path after the first "/"
+
 ?>
 <nav class="navbar navbar-expand-md navbar-accent bg-accent">
     <div class="container">
@@ -19,12 +21,24 @@ $currentPath = $paths[1]; // Gets the first path after the first "/"
                 </li>
             </ul>
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> <!-- the PHP if statement checks if it match the current path and sets the active state if it match -->
+            <!-- <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> the PHP if statement checks if it match the current path and sets the active state if it match
                     <a class="nav-link <?php if($currentPath === "login.php") echo 'active'?>" <?php if($currentPath === "login.php") echo 'aria-current="page"'?> href="/login.php">Login</a>
                 </li>
-                <li class="nav-item"> <!-- the PHP if statement checks if it match the current path and sets the active state if it match -->
+                <li class="nav-item"> the PHP if statement checks if it match the current path and sets the active state if it match
                     <a class="nav-link <?php if($currentPath === "signup.php") echo 'active'?>" <?php if($currentPath === "signup.php") echo 'aria-current="page"'?> href="/signup.php">Register</a>
+                </li>
+            </ul> -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAccountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu py-0 overflow-hidden" aria-labelledby="navbarAccountDropdown">
+                        <li><a class="dropdown-item py-2" href="/profile.php">Account</a></li>
+                        <li><hr class="dropdown-divider my-0"></li>
+                        <li><a class="dropdown-item py-2" href="/logout.php">Logout</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
