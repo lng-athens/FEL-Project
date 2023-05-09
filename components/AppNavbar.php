@@ -39,7 +39,7 @@ $currentPath = $paths[1]; // Gets the first path after the first "/"
                     <ul class="dropdown-menu py-0 overflow-hidden" aria-labelledby="navbarAccountDropdown">
                         <li><a class="dropdown-item py-2" href="/profile.php">Account</a></li>
                         <li><hr class="dropdown-divider my-0"></li>
-                        <li><a class="dropdown-item py-2" href="/logout.php">Logout</a></li>
+                        <li><a class="dropdown-item py-2" href="/includes//logout.inc.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
