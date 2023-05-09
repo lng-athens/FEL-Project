@@ -21,14 +21,16 @@ $currentPath = $paths[1]; // Gets the first path after the first "/"
                 </li>
             </ul>
 
-            <!-- <ul class="navbar-nav ms-auto">
-                <li class="nav-item"> the PHP if statement checks if it match the current path and sets the active state if it match
+            <?php if (!isset($_SESSION['uid'])) {?>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"> <!-- the PHP if statement checks if it match the current path and sets the active state if it match -->
                     <a class="nav-link <?php if($currentPath === "login.php") echo 'active'?>" <?php if($currentPath === "login.php") echo 'aria-current="page"'?> href="/login.php">Login</a>
                 </li>
-                <li class="nav-item"> the PHP if statement checks if it match the current path and sets the active state if it match
+                <li class="nav-item"> <!-- the PHP if statement checks if it match the current path and sets the active state if it match -->
                     <a class="nav-link <?php if($currentPath === "signup.php") echo 'active'?>" <?php if($currentPath === "signup.php") echo 'aria-current="page"'?> href="/signup.php">Register</a>
                 </li>
-            </ul> -->
+            </ul>
+            <?php } else {?>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarAccountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,6 +43,7 @@ $currentPath = $paths[1]; // Gets the first path after the first "/"
                     </ul>
                 </li>
             </ul>
+            <?php }?>
         </div>
     </div>
 </nav>

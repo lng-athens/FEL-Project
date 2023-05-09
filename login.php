@@ -23,23 +23,23 @@
     <div class="container" id="loginPage">
         <div class="row mt-5">
             <div class="col-12 col-md-6 mx-md-auto">
-                <form>
+                <form action="/includes/login.inc.php" method="post">
                     <h3 class="title">Login!</h3>
 
                     <div class="row mt-4">
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                                <input type="text" placeholder="Email" class="form-control" id="email" />
+                                <input type="text" placeholder="Email" class="form-control" name="email" id="email" />
                                 <label for="email" class="form-label">Email</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="password" placeholder="Password" class="form-control" id="password" />
+                                <input type="password" placeholder="Password" class="form-control" name="password" id="password" />
                                 <label for="password" class="form-label">Password</label>
                             </div>
                         </div>
 
                         <div class="mt-4 vstack gap-3 align-items-center">
-                            <button type="submit" class="btn btn-primary w-75" id="btnLogin">Login</button>
+                            <button type="submit" class="btn btn-primary w-75" name="btn-login" id="btn-login">Login</button>
                             <a href="/signup.php" class="btn btn-outline-primary w-75" id="btnGoToRegister">No account yet? Sign up here</a>
                         </div>
                     </div>
