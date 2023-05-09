@@ -23,42 +23,42 @@
     <div class="container" id="signupPage">
         <div class="row mt-5">
             <div class="col-12 col-md-10 mx-md-auto">
-                <form>
+                <form action="/includes/signup.inc.php" method="post">
                     <h3 class="title">Sign Up!</h3>
                     <div class="row mt-4">
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" placeholder="Your first name" class="form-control" id="firstName" />
+                                <input type="text" placeholder="Your first name" class="form-control" id="firstName" name="firstName" />
                                 <label for="firstName" class="form-label">First Name</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" placeholder="Your last name" class="form-control" id="lastName" />
+                                <input type="text" placeholder="Your last name" class="form-control" id="lastName" name="lastName" />
                                 <label for="lastName" class="form-label">Last Name</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="email" placeholder="Your email" class="form-control" id="email" />
+                                <input type="email" placeholder="Your email" class="form-control" id="email" name="email" />
                                 <label for="email" class="form-label">Email</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" placeholder="Your mobile contact number" class="form-control" id="contactNumber" />
+                                <input type="text" placeholder="Your mobile contact number" class="form-control" id="contactNumber" name="mobileNumber" />
                                 <label for="contactNumber" class="form-label">Mobile Contact Number</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="password" placeholder="Your password" class="form-control" id="password" />
+                                <input type="password" placeholder="Your password" class="form-control" id="password" name="password1" />
                                 <label for="password" class="form-label">Password</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="password" placeholder="Retype your password" class="form-control" id="verifyPassword" />
+                                <input type="password" placeholder="Retype your password" class="form-control" id="verifyPassword" name="password2" />
                                 <label for="verifyPassword" class="form-label">Confirm Password</label>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                     
                     <div class="mt-4 justify-content-center justify-content-md-end hstack gap-3">
                         <button type="reset" class="btn btn-secondary btn-flex" id="btnClear">Clear</button>
-                        <button type="submit" class="btn btn-primary btn-flex" id="btnRegister">Register</button>
+                        <button type="submit" class="btn btn-primary btn-flex" name="btn-signup" id="btn-signup">Register</button>
                     </div>
                 </form>
             </div>
